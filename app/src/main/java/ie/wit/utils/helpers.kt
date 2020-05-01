@@ -36,7 +36,7 @@ fun createLoader(activity: FragmentActivity) : AlertDialog {
         .setView(R.layout.loading)
     var loader = loaderBuilder.create()
     loader.setTitle(R.string.app_name)
-    loader.setIcon(R.mipmap.ic_launcher_homer_round)
+    loader.setIcon(R.mipmap.ic_launcher_lokation_round)
 
     return loader
 }
@@ -78,7 +78,7 @@ fun uploadImageView(app: LokationApp, imageView: ImageView) {
         }
     }
     }.addOnSuccessListener {
-        uploadTask.continueWithTask { task ->
+        uploadTask.continueWithTask { _ ->
             imageRef.downloadUrl
         }.addOnCompleteListener { task ->
             if (task.isSuccessful) {
@@ -160,7 +160,7 @@ fun validatePhoto(app: LokationApp, activity: Activity) {
     val googlePhotoExists = app.currentUser.photoUrl != null
 
     if(imageExists) imageUri = app.userImage
-    else if (googlePhotoExists) imageUri = app.currentUser?.photoUrl!!
+    else if (googlePhotoExists) imageUri = app.currentUser.photoUrl!!
 
     if (googlePhotoExists || imageExists) {
         if(!app.currentUser.displayName.isNullOrEmpty())
@@ -181,9 +181,9 @@ fun validatePhoto(app: LokationApp, activity: Activity) {
                 override fun onError(e: Exception) {}
             })
     }
-    else {   // New Regular User, upload default pic of homer
+    else {   // New Regular User, upload default pic of lokation
         activity.navView.getHeaderView(0).imageView
-            .setImageResource(R.mipmap.ic_launcher_homer_round)
+            .setImageResource(R.mipmap.ic_launcher_lokation_round)
         uploadImageView(app, activity.navView.getHeaderView(0).imageView)
     }
 }

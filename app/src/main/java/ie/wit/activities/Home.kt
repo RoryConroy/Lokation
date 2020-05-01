@@ -112,8 +112,11 @@ class Home : AppCompatActivity(),
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId) {
-            R.id.action_lokate -> toast("You Selected Lokate")
-            R.id.action_report -> toast("You Selected Report")
+            R.id.action_lokate -> navigateTo(LokateFragment.newInstance())
+
+            R.id.action_report -> navigateTo(ReportFragment.newInstance())
+
+            R.id.action_allreport -> navigateTo(ReportAllFragment.newInstance())
         }
         return super.onOptionsItemSelected(item)
     }

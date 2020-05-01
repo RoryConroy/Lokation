@@ -16,6 +16,7 @@
     <string name="enter_amount">Enter Amount</string>
     <string name="enter_title">Enter Title</string>
     <string name="enter_short">Enter Short Description</string>
+    <string name="action_allreport">Every report</string>
 
     <string name="title_activity_home">Home</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -32,8 +33,8 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
 
-    <string name="aboutus_title">Homer for President !!</string>
-    <string name="aboutus_message">Hi, I\'m Homer\n\nPlease vote for me.\n\n Please Please Please Please!!</string>
+    <string name="aboutus_title">What is Lokation?</string>
+    <string name="aboutus_message">Welcome to Lokate\n\nShare how this location makes you feel.\n\n Look back anytime. </string>
 
     <string name="messageLoading">Please wait while we Connect to the Server...</string>
 

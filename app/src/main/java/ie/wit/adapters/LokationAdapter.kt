@@ -48,7 +48,7 @@ class LokationAdapter(options: FirebaseRecyclerOptions<LokationModel>,
                         .into(itemView.imageIcon)
                 }
                 else
-                    itemView.imageIcon.setImageResource(R.mipmap.ic_launcher_homer_round)
+                    itemView.imageIcon.setImageResource(R.mipmap.ic_launcher_lokation_round)
 
             }
         }
