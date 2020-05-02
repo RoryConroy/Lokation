@@ -136,7 +136,6 @@ class LokateFragment : Fragment(), AnkoLogger {
                 val children = snapshot.children
                 children.forEach {
                     val lokation = it.getValue<LokationModel>(LokationModel::class.java)
-                    totalLokated += lokation!!.amount
                 }
 
             }

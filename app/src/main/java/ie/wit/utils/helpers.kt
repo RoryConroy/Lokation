@@ -78,7 +78,7 @@ fun uploadImageView(app: LokationApp, imageView: ImageView) {
         }
     }
     }.addOnSuccessListener {
-        uploadTask.continueWithTask { _ ->
+        uploadTask.continueWithTask { task ->
             imageRef.downloadUrl
         }.addOnCompleteListener { task ->
             if (task.isSuccessful) {
@@ -160,7 +160,7 @@ fun validatePhoto(app: LokationApp, activity: Activity) {
     val googlePhotoExists = app.currentUser.photoUrl != null
 
     if(imageExists) imageUri = app.userImage
-    else if (googlePhotoExists) imageUri = app.currentUser.photoUrl!!
+    else if (googlePhotoExists) imageUri = app.currentUser?.photoUrl!!
 
     if (googlePhotoExists || imageExists) {
         if(!app.currentUser.displayName.isNullOrEmpty())

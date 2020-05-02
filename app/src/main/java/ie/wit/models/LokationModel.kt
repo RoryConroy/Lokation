@@ -9,8 +9,6 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class LokationModel(
     var uid: String? = "",
-    var paymenttype: String = "N/A",
-    var amount: Int = 0,
     var Title: String ="",
     var Short: String="",
     var message: String = "a message",
@@ -26,8 +24,6 @@ data class LokationModel(
     fun toMap(): Map<String, Any?> {
         return mapOf(
             "uid" to uid,
-            "paymenttype" to paymenttype,
-            "amount" to amount,
             "message" to message,
             "Title" to Title,
             "Short" to Short,

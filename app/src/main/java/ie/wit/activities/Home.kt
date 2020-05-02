@@ -31,6 +31,7 @@ import kotlinx.android.synthetic.main.nav_header_home.view.*
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 
+
 class Home : AppCompatActivity(),
     NavigationView.OnNavigationItemSelectedListener {
 
