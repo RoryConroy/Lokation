@@ -16,8 +16,10 @@ import ie.wit.main.LokationApp
 import ie.wit.models.LokationModel
 import ie.wit.utils.*
 import kotlinx.android.synthetic.main.fragment_lokate.view.*
+import kotlinx.android.synthetic.main.login.view.*
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
+import org.jetbrains.anko.toast
 import java.util.HashMap
 
 
@@ -60,21 +62,32 @@ class LokateFragment : Fragment(), AnkoLogger {
 
     fun setButtonListener( layout: View) {
         layout.LokateButton.setOnClickListener {
-             val title = layout.add_title.text.toString()
+            val title = layout.add_title.text.toString()
             val short= layout.add_short.text.toString()
 
+            when {
+                layout.add_title.text.toString().isNullOrEmpty() -> {
+                    context?.toast("You must enter a title in order to create a lokation")
+                }
 
 
-                writeNewLokation(LokationModel(
-                    profilepic = app.userImage.toString(),
-                    isfavourite = favourite,
-                    latitude = app.currentLocation.latitude,
-                    longitude = app.currentLocation.longitude,
-                    Title = title,
-                    Short = short,
-                    email = app.currentUser.email))
-
+                else -> {
+                    writeNewLokation(
+                        LokationModel(
+                            profilepic = app.userImage.toString(),
+                            isfavourite = favourite,
+                            latitude = app.currentLocation.latitude,
+                            longitude = app.currentLocation.longitude,
+                            Title = title,
+                            Short = short,
+                            email = app.currentUser.email
+                        )
+                    )
+                }
+            }
         }
+
+
     }
 
     fun setFavouriteListener (layout: View) {
