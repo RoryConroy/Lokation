@@ -21,12 +21,12 @@ import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
 import org.jetbrains.anko.toast
 import java.util.HashMap
+import kotlin.time.milliseconds
 
 
 class LokateFragment : Fragment(), AnkoLogger {
 
     lateinit var app: LokationApp
-    var totalLokated = 0
     lateinit var loader : AlertDialog
     lateinit var eventListener : ValueEventListener
     var favourite = false
@@ -44,6 +44,8 @@ class LokateFragment : Fragment(), AnkoLogger {
         val root = inflater.inflate(R.layout.fragment_lokate, container, false)
         loader = createLoader(activity!!)
         activity?.title = getString(R.string.action_lokate)
+        //allows the customer to rate their mood at the location through a rich interface experience
+
 
 
 
@@ -64,10 +66,14 @@ class LokateFragment : Fragment(), AnkoLogger {
         layout.LokateButton.setOnClickListener {
             val title = layout.add_title.text.toString()
             val short= layout.add_short.text.toString()
-
+            val rating= layout.add_rating.text.toString()
             when {
                 layout.add_title.text.toString().isNullOrEmpty() -> {
-                    context?.toast("You must enter a title in order to create a lokation")
+                    context?.toast("You must enter a title in order to create a lokation!")
+                }
+
+                    layout.add_rating.text.toString().toInt() > 10 && layout.add_rating.text.toString().isNullOrEmpty() -> {
+                        context?.toast("You have to add a valid rating to create a lokation!")
                 }
 
 
@@ -80,6 +86,7 @@ class LokateFragment : Fragment(), AnkoLogger {
                             longitude = app.currentLocation.longitude,
                             Title = title,
                             Short = short,
+                            Rating= rating,
                             email = app.currentUser.email
                         )
                     )
