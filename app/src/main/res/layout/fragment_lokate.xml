@@ -9,12 +9,12 @@
 
     <ImageView
         android:id="@+id/imagefavourite"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_width="93dp"
+        android:layout_height="82dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="144dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toEndOf="@+id/donateTitle"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/star_big_off" />
@@ -70,6 +70,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:textColor="@color/colorPrimary"
         android:text="@string/lokateButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,8 +80,8 @@
 
     <EditText
         android:id="@+id/add_title"
-        android:layout_width="391dp"
-        android:layout_height="50dp"
+        android:layout_width="344dp"
+        android:layout_height="51dp"
         android:ems="10"
         android:hint="Put your title here"
         android:inputType="textPersonName"
@@ -93,8 +94,8 @@
 
     <EditText
         android:id="@+id/add_short"
-        android:layout_width="393dp"
-        android:layout_height="45dp"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:hint="Describe how you are feeling here"
         android:inputType="textPersonName"
@@ -106,15 +107,15 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="253dp"
+        android:layout_height="55dp"
         android:text="Want to look back on this thought?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.275" />
+        app:layout_constraintVertical_bias="0.254" />
 
     <TextView
         android:id="@+id/textView1"
@@ -130,8 +131,8 @@
 
     <EditText
         android:id="@+id/add_rating"
-        android:layout_width="203dp"
-        android:layout_height="61dp"
+        android:layout_width="121dp"
+        android:layout_height="49dp"
         android:autofillHints="10"
         android:ems="10"
         android:inputType="number"

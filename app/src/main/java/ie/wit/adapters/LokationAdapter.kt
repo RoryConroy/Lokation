@@ -32,7 +32,6 @@ class LokationAdapter(options: FirebaseRecyclerOptions<LokationModel>,
             with(lokation) {
                 itemView.tag = lokation
                 itemView.Titleview.text = lokation.Title.toString()
-                itemView.Shortview.text = lokation.Short.toString()
                 itemView.Ratingview.text = lokation.Rating.toString()
 
                 if(listener is ReportAllFragment)
