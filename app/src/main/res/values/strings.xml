@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Lokate</string>
     <string name="action_lokate">Upload</string>
-    <string name="action_report">Report</string>
+    <string name="action_report">Lokations</string>
     <string name="lokateTitle">Welcome</string>
     <string name="lokateSubtitle">Share your world.</string>
     <string name="lokateButton">Upload</string>
@@ -27,7 +27,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_lokate">Upload</string>
-    <string name="menu_report">Report</string>
+    <string name="menu_report">My lokations</string>
     <string name="menu_favourites">Favourites</string>
     <string name="menu_about">About Us</string>
     <string name="menu_share">Share</string>

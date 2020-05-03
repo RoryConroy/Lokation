@@ -17,6 +17,7 @@ import ie.wit.models.LokationModel
 import ie.wit.utils.createLoader
 import ie.wit.utils.hideLoader
 import ie.wit.utils.showLoader
+import kotlinx.android.synthetic.main.fragment_edit.*
 import kotlinx.android.synthetic.main.fragment_edit.view.*
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
@@ -49,6 +50,7 @@ class EditFragment : Fragment(), AnkoLogger {
         root.editShort.setText(editLokation!!.Short)
         root.editTitle.setText(editLokation!!.Title)
         root.editMessage.setText(editLokation!!.message)
+        root.editRating.setText(editLokation!!.Rating)
         root.editUpvotes.setText(editLokation!!.upvotes.toString())
 
 
@@ -77,6 +79,7 @@ class EditFragment : Fragment(), AnkoLogger {
         editLokation!!.Short = root.editShort.text.toString()
         editLokation!!.Title = root.editTitle.text.toString()
         editLokation!!.message = root.editMessage.text.toString()
+        editLokation!!.Rating= root.editRating.text.toString()
         editLokation!!.upvotes = root.editUpvotes.text.toString().toInt()
     }
 

@@ -33,6 +33,7 @@ class LokationAdapter(options: FirebaseRecyclerOptions<LokationModel>,
                 itemView.tag = lokation
                 itemView.Titleview.text = lokation.Title.toString()
                 itemView.Shortview.text = lokation.Short.toString()
+                itemView.Ratingview.text = lokation.Rating.toString()
 
                 if(listener is ReportAllFragment)
                     ; // Do Nothing, Don't Allow 'Clickable' Rows

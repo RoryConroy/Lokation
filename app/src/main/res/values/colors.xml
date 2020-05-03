@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2196F3</color>
-    <color name="colorPrimaryDark">#0368B9</color>
-    <color name="colorAccent">#034F8F</color>
-    <color name="ic_launcher_homer_background">#FFFFFF</color>
+    <color name="colorPrimary">#FE2712</color>
+    <color name="colorPrimaryDark">#A70F01</color>
+    <color name="colorAccent">#340D09</color>
+    <color name="ic_launcher_homer_background">#FFDED8</color>
 
-    <color name="colorWhite">#FFFFFF</color>
-    <color name="grey_100">#2196F3</color>
-    <color name="grey_300">#E0E0E0</color>
-    <color name="grey_500">#9E9E9E</color>
+    <color name="colorWhite">#FFDEDB</color>
+    <color name="grey_100">#FE8176</color>
+    <color name="grey_300">#FE8175</color>
+    <color name="grey_500">#340D09</color>
 </resources>

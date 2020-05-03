@@ -72,7 +72,7 @@ class LokateFragment : Fragment(), AnkoLogger {
                     context?.toast("You must enter a title in order to create a lokation!")
                 }
 
-                    layout.add_rating.text.toString().toInt() > 10 && layout.add_rating.text.toString().isNullOrEmpty() -> {
+                    layout.add_rating.text.toString().toInt() > 10 -> {
                         context?.toast("You have to add a valid rating to create a lokation!")
                 }
 
