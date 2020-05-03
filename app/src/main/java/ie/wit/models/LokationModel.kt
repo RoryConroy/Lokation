@@ -11,7 +11,6 @@ data class LokationModel(
     var uid: String? = "",
     var Title: String ="",
     var Short: String="",
-    var message: String = "a message",
     var upvotes: Int = 0,
     var Rating: String="",
     var profilepic: String = "",
@@ -25,7 +24,6 @@ data class LokationModel(
     fun toMap(): Map<String, Any?> {
         return mapOf(
             "uid" to uid,
-            "message" to message,
             "Title" to Title,
             "Short" to Short,
             "Rating" to Rating,

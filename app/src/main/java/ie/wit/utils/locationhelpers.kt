@@ -144,7 +144,7 @@ fun addMapMarkers(dl : ArrayList<LokationModel>, map: GoogleMap) {
     dl.forEach {
         map.addMarker(
             MarkerOptions().position(LatLng(it.latitude, it.longitude))
-                .title("${it.Title} - ${it.Short}")
+                .title("${it.Title} - ${it.Rating}")
                 .icon(
                     //BitmapDescriptorFactory.fromResource(R.mipmap.ic_homer_map))
                 BitmapDescriptorFactory.fromResource(R.mipmap.map_lokate))

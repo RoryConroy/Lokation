@@ -49,7 +49,6 @@ class EditFragment : Fragment(), AnkoLogger {
 
         root.editShort.setText(editLokation!!.Short)
         root.editTitle.setText(editLokation!!.Title)
-        root.editMessage.setText(editLokation!!.message)
         root.editRating.setText(editLokation!!.Rating)
         root.editUpvotes.setText(editLokation!!.upvotes.toString())
 
@@ -78,7 +77,6 @@ class EditFragment : Fragment(), AnkoLogger {
     fun updateLokationData() {
         editLokation!!.Short = root.editShort.text.toString()
         editLokation!!.Title = root.editTitle.text.toString()
-        editLokation!!.message = root.editMessage.text.toString()
         editLokation!!.Rating= root.editRating.text.toString()
         editLokation!!.upvotes = root.editUpvotes.text.toString().toInt()
     }

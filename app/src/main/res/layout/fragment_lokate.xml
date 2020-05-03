@@ -12,9 +12,9 @@
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="332dp"
+        android:layout_marginTop="172dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toEndOf="@+id/donateTitle"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/star_big_off" />
@@ -44,21 +44,21 @@
         android:id="@+id/donateSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/donateTitle"
         android:layout_alignEnd="@+id/donateTitle"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/donateTitle"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/lokateSubtitle"
         android:textAppearance="?android:attr/textAppearanceMedium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintHorizontal_bias="0.034"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.114" />
+        app:layout_constraintVertical_bias="0.06" />
 
     <Button
         android:id="@+id/LokateButton"
@@ -79,21 +79,21 @@
 
     <EditText
         android:id="@+id/add_title"
-        android:layout_width="411dp"
-        android:layout_height="49dp"
+        android:layout_width="391dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:hint="Put your title here"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
+        app:layout_constraintVertical_bias="0.475" />
 
     <EditText
         android:id="@+id/add_short"
-        android:layout_width="403dp"
+        android:layout_width="393dp"
         android:layout_height="45dp"
         android:ems="10"
         android:hint="Describe how you are feeling here"
@@ -102,7 +102,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.628" />
+        app:layout_constraintVertical_bias="0.567" />
 
     <TextView
         android:id="@+id/textView"
@@ -111,9 +111,10 @@
         android:text="Want to look back on this thought?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintHorizontal_bias="0.221"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.275" />
 
     <TextView
         android:id="@+id/textView1"
@@ -122,25 +123,24 @@
         android:text="Rate your expierence from 1-10!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.698" />
 
     <EditText
         android:id="@+id/add_rating"
-        android:layout_width="392dp"
-        android:layout_height="51dp"
-        android:ems="10"
-        android:text="@string/default_rating"
-        android:inputType="number"
+        android:layout_width="203dp"
+        android:layout_height="61dp"
         android:autofillHints="10"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/default_rating"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.758" />
+        app:layout_constraintVertical_bias="0.77" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
